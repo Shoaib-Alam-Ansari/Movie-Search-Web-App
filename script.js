@@ -15,7 +15,6 @@ searchbtn.addEventListener("click", () => {
 
   // Get the value of the input field and remove any leading or trailing whitespace
   const inputBtn = document.getElementById("search-inp").value.trim();
-
   // Construct the final URL for the API request
   const finalURL = `https://www.omdbapi.com/?s=${inputBtn}&apikey=c9466890`;
 
@@ -43,6 +42,7 @@ searchbtn.addEventListener("click", () => {
             </div>
           `;
         });
+        inputBtn.val == ""
 
         // Prepend the previously fetched data to the existing result
         result.innerHTML += previousData;
